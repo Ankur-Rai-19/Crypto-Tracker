@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Crypto Tracker | Favourites List</title>
+        <link rel="stylesheet" href="../styles.css" />
+
+        <!-- Google Fonts Links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Font Awesome Links -->
+        <script
+            src="https://kit.fontawesome.com/a1434bc214.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <nav>
+            <div class="left-nav">
+                <a href="../index.html" class="title">Crypto Tracker</a>
+            </div>
+
+            <div class="right-nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Favourites</a>
+                <div class="search-container">
+                    <span class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <input type="text" id="search-box" placeholder="Search" />
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <h1>Favourites Coins</h1>
+            <div class="shimmer-container" style="display: none">
+                <div class="shimmer"></div>
+            </div>
+
+            <table id="favorite-table">
+                <thead>
+                    <tr>
+                        <th>Position</th>
+                        <th>Icons</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>24H Volume</th>
+                        <th>Market Cap</th>
+                    </tr>
+                </thead>
+
+                <tbody id="favorite-table-body">
+                    <!-- Crypto Table Body by js-->
+                </tbody>
+            </table>
+
+            <p id="no-favorites" style="display: none">
+                There are no liked Coins
+            </p>
+        </main>
+
+        <script src="favorites.js"></script>
+    </body>
+</html>
